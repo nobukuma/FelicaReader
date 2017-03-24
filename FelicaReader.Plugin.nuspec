@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="2.8.3">
+		<id>Plugin.FelicaReader</id>
+		<version>1.0.0</version>
+		<title>FelicaReader Plugin for Xamarin and UWP</title>
+		<authors>nobukuma</authors>
+		<owners>nobukuma</owners>
+    <licenseUrl>http://app.strawhat.net/plugins/FelicaReader</licenseUrl>
+    <projectUrl>http://app.strawhat.net/plugins/FelicaReader</projectUrl>
+		<!--Default Icon, a template can be found:  https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon.png-->  
+		<iconUrl>https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon_nuget.png</iconUrl>
+
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+         Felica card reader plugins for Xamarin.Android and Xamarin.UWP.
+         It can read Felica card such as Suica, PASMO, Edy and so on.
+		</description>
+		<summary>Felica card reader plugins for Xamarin.Android and Xamarin.UWP</summary>
+		<tags>plugin for xamarin, uwp, android, felica</tags>
+		<dependencies>
+			<group targetFramework="MonoAndroid">
+         <dependency id="System.Reactive" version="[3.1.1,)" />
+			</group>
+			<group targetFramework="uap">
+         <dependency id="System.Reactive" version="[3.1.1,)" />
+			</group>
+      <group targetFramework="netstandard1.4">
+      </group>
+		</dependencies>
+	</metadata>
+	<files>
+    <!--Xamarin.Android-->
+		<file src="FelicaReader\Plugin.FelicaReader.Android\bin\Release\Plugin.FelicaReader.dll" target="lib\MonoAndroid10\Plugin.FelicaReader.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader.Android\bin\Release\Plugin.FelicaReader.xml" target="lib\MonoAndroid10\Plugin.FelicaReader.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader.Android\bin\Release\Plugin.FelicaReader.pdb" target="lib\MonoAndroid10\Plugin.FelicaReader.pdb" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.dll" target="lib\MonoAndroid10\Plugin.FelicaReader.Abstractions.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.xml" target="lib\MonoAndroid10\Plugin.FelicaReader.Abstractions.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.pdb" target="lib\MonoAndroid10\Plugin.FelicaReader.Abstractions.pdb" />
+
+		<!--uap-->
+		<file src="FelicaReader\Plugin.FelicaReader.UWP\bin\Release\Plugin.FelicaReader.dll" target="lib\UAP10.0\Plugin.FelicaReader.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader.UWP\bin\Release\Plugin.FelicaReader.xml" target="lib\UAP10.0\Plugin.FelicaReader.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader.UWP\bin\Release\Plugin.FelicaReader.pdb" target="lib\UAP10.0\Plugin.FelicaReader.pdb" />
+		<file src="FelicaReader\Plugin.FelicaReader.UWP\bin\Release\Plugin.FelicaReader.pri" target="lib\UAP10.0\Plugin.FelicaReader.pri" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.dll" target="lib\UAP10.0\Plugin.FelicaReader.Abstractions.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.xml" target="lib\UAP10.0\Plugin.FelicaReader.Abstractions.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.pdb" target="lib\UAP10.0\Plugin.FelicaReader.Abstractions.pdb" />
+		<file src="FelicaReader\PcscSdk\bin\Release\PcscSdk.dll" target="lib\UAP10.0\PcscSdk.dll" />
+		<file src="FelicaReader\PcscSdk\bin\Release\PcscSdk.pdb" target="lib\UAP10.0\PcscSdk.pdb" />
+    <file src="FelicaReader\PcscSdk\bin\Release\PcscSdk.pri" target="lib\UAP10.0\PcscSdk.pri" />
+    
+		<!-- netstandard1.4 -->
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.dll" target="lib\netstandard1.4\Plugin.FelicaReader.Abstractions.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.xml" target="lib\netstandard1.4\Plugin.FelicaReader.Abstractions.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader.Abstractions\bin\Release\Plugin.FelicaReader.Abstractions.pdb" target="lib\netstandard1.4\Plugin.FelicaReader.Abstractions.pdb" />		
+		<file src="FelicaReader\Plugin.FelicaReader\bin\Release\Plugin.FelicaReader.dll" target="lib\netstandard1.4\Plugin.FelicaReader.dll" />
+		<file src="FelicaReader\Plugin.FelicaReader\bin\Release\Plugin.FelicaReader.xml" target="lib\netstandard1.4\Plugin.FelicaReader.xml" />
+		<file src="FelicaReader\Plugin.FelicaReader\bin\Release\Plugin.FelicaReader.pdb" target="lib\netstandard1.4\Plugin.FelicaReader.pdb" />		
+	</files>
+</package>
