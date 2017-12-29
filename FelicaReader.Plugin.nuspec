@@ -4,25 +4,26 @@
 		<id>Plugin.FelicaReader</id>
 		<version>1.0.0</version>
 		<title>FelicaReader Plugin for Xamarin and UWP</title>
-		<authors>nobukuma</authors>
-		<owners>nobukuma</owners>
-    <licenseUrl>http://app.strawhat.net/plugins/FelicaReader</licenseUrl>
-    <projectUrl>http://app.strawhat.net/plugins/FelicaReader</projectUrl>
-		<!--Default Icon, a template can be found:  https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon.png-->  
-		<iconUrl>https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon_nuget.png</iconUrl>
+		<authors>Aoki Nobuaki</authors>
+		<owners>Aoki Nobuaki</owners>
+    <licenseUrl>https://github.com/nobukuma/FelicaReader/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/nobukuma/FelicaReader</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/nobukuma/FelicaReader/master/noun_775357.png</iconUrl>
 
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
          Felica card reader plugins for Xamarin.Android and Xamarin.UWP.
-         It can read Felica card such as Suica, PASMO, Edy and so on.
+         With this plugin, the app can detect a Felica card (such as Suica, PASMO and Edy) and send Felica commands to it.
+         
+         The icon image is "Card Nfc" by Viktor Vorobyev from the Noun Project (https://thenounproject.com/term/card-nfc/775357/).
 		</description>
 		<summary>Felica card reader plugins for Xamarin.Android and Xamarin.UWP</summary>
 		<tags>plugin for xamarin, uwp, android, felica</tags>
 		<dependencies>
-			<group targetFramework="MonoAndroid">
+			<group targetFramework="MonoAndroid10">
          <dependency id="System.Reactive" version="[3.1.1,)" />
 			</group>
-			<group targetFramework="uap">
+			<group targetFramework="UAP10.0">
          <dependency id="System.Reactive" version="[3.1.1,)" />
 			</group>
       <group targetFramework="netstandard1.4">
