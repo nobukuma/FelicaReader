@@ -28,7 +28,7 @@ Xamarin.Forms sample: [nobukuma/FelicaReaderSample](https://github.com/nobukuma/
 
 プロジェクトに、NuGetからパッケージをインストールします。
 
-- Nuget: [![NuGet Badge](https://buildstats.info/nuget/FelicaReaderPlugin)](https://www.nuget.org/packages/FelicaReaderPlugin/)
+- Nuget: [![NuGet Badge](https://buildstats.info/nuget/Plugin.FelicaReader)](https://www.nuget.org/packages/Plugin.FelicaReader)
 
 Xamarin.Formsアプリのソリューションにおいて、 
 共通部分のSample.FelicaReader、またSample.FelicaReader.DroidとSample.FelicaReader.UWPの それぞれでFelicaReaderプラグインをNuGetからインストールする必要があります。
